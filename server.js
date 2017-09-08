@@ -118,7 +118,7 @@ app.use('/', routes)
 //app.use('/', routes);
 
 
-const server = app.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
+const server = app.listen(process.env.PORT || 5000, process.env.IP || "0.0.0.0", function(){
   var addr = server.address();
   console.log("Chat server listening at", addr.address + ":" + addr.port);
 });
