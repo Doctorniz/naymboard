@@ -1,0 +1,37 @@
+html
+  head
+    title= "naymBoard"
+    link(href="https://fonts.googleapis.com/css?family=Amatic+SC|Baloo|Exo|Josefin+Sans|Nova+Mono|Pacifico|Rock+Salt" rel="stylesheet")
+    style
+      include ../../client/css/site.css
+    block css
+    block jshead
+  body
+    .Header
+      block header
+        .siteTitle
+          a(href='/').siteTitleText= "naymBoard"
+        .sitenav
+        .miniDash
+          block miniDash
+        .cardMessages
+          if errorCard
+            span.cardMessage.errorMessage= "Error: " + error
+          if success
+            span.cardMessage.successMessage= success
+    
+    
+    .content
+      block content
+    
+    
+    .footer
+      block footer
+        .Footer
+          span &copy2017 Nizar Ahmed
+          span All this work would not have been possible without the help of the kind folk at 
+            a(href="http://freecodecamp.com") FreeCodeCamp
+            |  or the work of 
+            a(href="http://wesbos.com") Wes Bos.
+          span Special thanks to Google for allowing me to use their API which was necessary for all the searches, and Quandl for their provision of stock data.
+    block jsfoot

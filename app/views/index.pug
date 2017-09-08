@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  div#App
+
+block jsfoot
+  script(type='text/javascript').
+    var dataToRender = !{JSON.stringify(dataToRender)}
+    var isLoggedIn =!{JSON.stringify(isLoggedIn)}
+    var error = "#{error}"
+  script(type='text/javascript' src='/client/js/Router-bundle.js')

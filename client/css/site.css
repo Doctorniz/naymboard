@@ -1,0 +1,548 @@
+h1 {
+    color: red;
+}
+#MainContainer {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+#AppDashBoard {
+    border:1px inset;
+    background-color:rgba(170, 125, 57,0.6);
+    display:flex;
+    flex-direction:column;
+    width:70%;
+    align-self:center;
+    padding:20px;
+    border-radius:25px;
+    border:1px dotted;
+    
+}
+
+.LikedHeart {
+    color: red;
+}
+
+.UnlikedHeart {
+    color:blue;
+}
+
+.UnlikedHeart:hover {
+    color: red;
+}
+
+.FavIcon {
+    border:none;
+    background-color: transparent;
+    cursor:pointer;
+    outline: 0;
+    display:flex;
+    font-family:"Exo";
+    justify-content:center;
+    margin-bottom:auto;
+    margin-top:auto;
+    padding:5px;
+    
+
+}
+
+
+
+.ImageComponentImage {
+    width:100%;
+    max-height:50vh;
+    
+}
+
+.LikesCommentsContainer {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.LikeCommentShareBar {
+    display:flex;
+   
+
+}
+
+.CommentBoxForm {
+    display:flex;
+    flex: 3 0 0;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding:2px;
+    font-family:"Exo";
+}
+
+.toCenter {
+    flex: 0.5 0 0;
+}
+
+.CommentBoxInput {
+    flex: 3 0 0;
+    outline:0;
+    padding:3px;
+    margin:10px;
+    font-family:"Exo";
+}
+
+.numberOfLikes {
+    font-weight:bolder;
+    padding-left:2px;
+    padding-right:5px;
+}
+
+
+.ImageComponentContainer {
+    display:flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    justify-content:center;
+    max-width:30vw;
+    min-width:10vw;
+    
+    align-self:center;
+}
+
+
+
+.GalleryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    padding:10px;
+    
+}
+
+.ImageComponentHeader {
+    text-decoration: none;
+    color:black;
+    font-family:"Baloo";
+    text-align:center;
+    font-size: 2.5rem;
+    text-transform: uppercase ;
+    line-height:1.0;
+    padding:15px;
+}
+
+.ImageInfoBar {
+    display:flex;
+    margin:2px;
+    padding:2px;
+    align-items:center;
+    
+}
+.ImageComponentSlug {
+    flex: 1 0 0;
+    text-decoration: none;
+    font-family: "Josefin Sans";
+    color:darkblue;
+    vertical-align: middle;
+    display:flex;
+    align-self: center;
+}
+
+.ImageComponentTags {
+    flex: 0.5 0 0;
+    font-family: "Exo";
+    vertical-align: middle;
+    align-self:center;
+    padding: 4px;
+}
+
+.ImageComponentContributor {
+    text-decoration: none;
+    text-align:right;
+    font-size:0.8rem;
+    color:rgb(0, 132, 180);
+    font-family:"Exo";
+}
+
+.editMode {
+    display:flex;
+    justify-content:center;
+
+
+}
+
+ .editMode > a {
+  
+    flex: 1 0 0;
+    border: 2px outset;
+    text-align:center;
+    text-decoration:none;
+    border-radius:10px;
+    cursor: pointer;
+    outline:none;
+     padding:4px;
+    font-size:1.2rem;
+    font-family:"Exo";
+    background-color:rgb(50, 56, 117);
+    color:white;
+  
+}
+
+ .editMode > a:hover {
+     color:rgb(7, 19, 134);
+    background-color:rgb(189, 181, 181);
+ }
+
+
+
+.deletePost {
+    flex: 1 0 0;
+    text-align:center;
+    border:2px outset;
+    cursor: pointer;
+    outline:none;
+    border-radius:10px;
+    background-color:rgb(194, 0, 0);
+    color:white;
+    padding:4px;
+    font-size:1.2rem;
+    font-family:"Exo";
+    
+}
+
+.deletePost:hover {
+    color:rgb(170, 57, 57);
+    background-color:rgb(189, 181, 181);
+}
+
+
+.CommentsContainer {
+    display:flex;
+    flex-direction:column;
+}
+
+.ImageDescription {
+    text-align:center;
+    padding:10px;
+    font-family:"Rock Salt";
+    line-height:1.0;
+}
+
+.EachComment {
+    display:flex;
+    flex-direction:column;
+    padding:5px;
+}
+
+.EachCommentContent {
+    font-family:"Josefin Sans";
+    padding:5px;
+    font-size:1.3rem;
+}
+
+.EachCommentLineTwo {
+    display:flex;
+}
+
+.EachCommentTime {
+    flex: 1 0 0;
+    font-family:"Josefin Sans";
+    font-style:italic;
+    padding-left:10px;
+}
+
+
+.DeleteCommentButton {
+    padding-left:10px;
+    border:none;
+    outline:none;
+    background-color:transparent;
+    color:red;
+    cursor:pointer;
+    font-size:0.9rem;
+}
+
+.DeleteCommentButton:hover {
+    color:black;
+    font-size:0.9rem;
+}
+
+.AddPostContainer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ImagePostHeader {
+    font-family: "Baloo";
+    font-size:3.5rem;
+    text-align:center;
+    padding: 12px;
+}
+
+.AddEditPostForm {
+    display:flex;
+    flex-direction:column;
+    padding:15px;
+    width:70%;
+    align-self:center;
+    background-color:rgb(170, 60, 57);
+    border:4px solid white;
+    border-radius:10px;
+}
+
+
+
+.AddEditInput {
+    padding:5px;
+    background-color:rgb(255, 173, 171);
+    border: 2px outset;
+    text-align:center;
+        border-radius:10px;
+    
+}
+
+.AddEditInput::placeholder {
+    color: rgb(65, 3, 1)
+}
+
+.AddEditTitle {
+    font-size:1.4rem;
+    font-family:"Josefin Sans";
+    margin:5px;
+    text-transform:uppercase;
+}
+
+.AddEditImageLink {
+    font-size:0.8rem;
+    font-family:"Exo";
+    flex: 1 0 0;
+    align-self:center;
+    width:71%;
+    margin:5px;
+}
+
+.AddEditChoiceText {
+    font-family: "Josefin Sans";
+    font-size:1.4rem;
+    padding: 5px;
+    margin: 5px 5px 5px 10px;
+    text-align:center;
+    color:rgb(255, 212, 211);
+}
+
+#ImageDesc {
+    border: 3px outset;
+    font-family:"Josefin Sans";
+    font-size: 1.1rem;
+    padding: 10px;
+    height:80px;
+    margin: 5px;
+    background-color:rgb(67, 24, 22);
+    color:rgb(255, 171, 169);
+    outline:none;
+
+}
+
+#ImageDesc::placeholder {
+    color:white;
+}
+#ImageDesc:focus {
+    color:rgb(67, 24, 22);
+    background-color:rgb(255, 171, 169);
+}
+
+
+.AddEditFileUpload {
+    width:0.1px;
+    height:0.1px;
+    opacity:0;
+    overflow:hidden;
+    position:absolute;
+}
+
+.AddEditFileUploadLabel {
+    font-family:"Exo";
+    font-size:0.8rem;
+    cursor:pointer;
+    flex: 1 0 0;
+    border: 2px outset;
+    margin:5px;
+    padding: 5px;
+    text-align:center;
+    align-self:center;
+    width:70%;
+    background-color:rgb(255, 173, 171);
+    border-radius:10px;
+    
+}
+
+
+.SomehowAddImage {
+    display:flex;
+    flex-direction:column;
+}
+
+.AddEditFormButton {
+    font-family:"Exo";
+    font-size:1.4rem;
+    border:2px solid ;
+    border-color:white;
+    border-radius:15px;
+    font-weight:bolder;
+    cursor:pointer;
+    padding:5px;
+    margin:5px;
+    background-color:rgb(255, 173, 171);
+    color:rgb(67, 24, 22);
+
+    
+}
+.AddEditFormButton:hover {
+    background-color:rgb(67, 24, 22);
+    color:rgb(255, 171, 169);
+}
+.Header {
+    display:flex;
+    flex-direction:column;
+}
+
+.siteTitle {
+    font-family:"Baloo";
+    font-size:5.0rem;
+    text-align:center;
+    padding:20px;
+    
+}
+
+.siteTitleText {
+    text-decoration: none;
+    color:rgb(85, 53, 5);
+}
+
+body {
+    background-color:rgba(255, 255, 154,0.2);
+}
+
+.loggedInAppDash {
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    
+}
+
+.loggedInAppDashbtn {
+    text-decoration: none;
+    color: rgb(255, 215, 154);
+    font-family:"Rock Salt";
+    font-size:1.2rem;
+    width:300px;
+    align-self:center;
+    background-color:rgb(40, 120, 77);
+    padding:10px;
+    margin:5px;
+    border: solid 2px;
+    border-color: rgb(15,47,32);
+    border-radius:5px;
+    
+}
+
+.notLoggedInAppDash {
+    display:flex;
+    width:100%;
+    align-self:center;
+}
+
+#LoginSignupForm {
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+#LogInUsername, #LogInPassword {
+    text-align:center;
+    padding: 4px;
+    margin: 5px;
+    border: 2px outset;
+    font-family:"Exo";
+    border-color:rgb(170, 125, 57);
+    border-radius:10px;
+    outline:none;
+}
+
+
+.AppDashButton {
+    text-align:center;
+    text-decoration:none;
+    font-family:"Exo";
+    font-size:1.3rem;
+    cursor:pointer;
+    border:2px solid;
+    border-color:rgb(170, 125, 57);
+    border-radius:10px;
+    padding: 4px;
+    margin:5px;
+    outline:none;
+}
+
+.LogInBtn {
+        background-color: rgb(112, 180, 144);
+        color: rgb(255, 255, 158);
+
+}
+
+.SignUpBtn {
+        background-color: rgb(85, 85, 5);
+        color: rgb(255, 255, 158);
+
+}
+
+.TwitterLogin {
+        background-color: rgb(0, 172, 237);
+        color:white;
+
+}
+
+.SocialIcon {
+    max-height:50px;
+}
+
+.PaginationDiv {
+    display:flex;
+    flex-direction:column;
+    align-self:center;
+    text-align:center;
+    font-family:"Exo";
+    
+}
+
+.PageNumbers {
+    display:flex;
+    justify-content:center;
+}
+
+.perPageRange {
+    
+}
+
+.perPageRange::-ms-track {
+    width:100%;
+    pointer:cursor;
+    
+}
+
+.perPageRange:focus {
+    outline:none;
+}
+
+.AppDashError {
+    font-family:"Exo";
+    padding:10px;
+    padding-left:30px;
+    margin:10px;
+    border:2px solid;
+    border-color:rgb(34, 0, 10);
+    border-radius:20px;
+    background-color:rgb(244, 164, 187);
+    font-weight:bolder;
+    color:rgb(153, 51, 80);
+}
