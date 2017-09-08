@@ -47,7 +47,7 @@
     "passport-twitter": "~1.0.4"
   },
   "scripts": {
-    "start": "concurrently 'nodemon' 'webpack --watch'"
+    "start": "node server"
   },
   "devDependencies": {},
   "license": "ISC"
