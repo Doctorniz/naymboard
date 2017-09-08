@@ -47,11 +47,16 @@ h1 {
 
 }
 
+.ImageComponentImageLink {
+    display:flex;
+    justify-content:center;
+}
+
 
 
 .ImageComponentImage {
-    width:100%;
-    max-height:50vh;
+ 
+  
     
 }
 
@@ -93,6 +98,8 @@ h1 {
     padding-left:2px;
     padding-right:5px;
 }
+
+
 
 
 .ImageComponentContainer {
@@ -545,4 +552,12 @@ body {
     background-color:rgb(244, 164, 187);
     font-weight:bolder;
     color:rgb(153, 51, 80);
+}
+
+.Footer {
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    font-family:"Pacifico";
+    padding:15px;
 }

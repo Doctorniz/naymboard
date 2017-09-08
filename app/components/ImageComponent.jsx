@@ -28,7 +28,7 @@ export default class ImageComponent extends React.Component {
             <Link to={'/'+this.props.ImageData.slug} className="ImageComponentImageLink">
                     
                     {this.props.ImageData.ImageLink ? (
-                    <img src={this.props.ImageData.ImageLink} className="ImageComponentImage" />
+                    <div className="ImageComponentImage" style={{"background": "no-repeat center url("+this.props.ImageData.ImageLink+")", "backgroundSize": "cover", "minWidth": "200px", "minHeight": "200px", "maxHeight":"300px", "maxWidth":"300px"}}  > </div>
                     ): ""}    
                         
                      </Link>
